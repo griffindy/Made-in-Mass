@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <title>Made in Mass</title>
+  <%= stylesheet_link_tag 'normalize' %>
+  <%= stylesheet_link_tag 'style' %>
+</head>
+<body>
+  <header>
+    <h1><%= link_to 'Made in Mass', url(:companies, :index) %></h1>
+    <h2>A list of technology and web companies from Massachusetts</h2>
+  </header>
+
+  <%= yield %>
+
+</body>

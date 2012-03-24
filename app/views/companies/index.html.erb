@@ -1,0 +1,9 @@
+    <% @companies.each do |company| %>
+      <p>
+        <h4><%= link_to company.name, company.website %></h4>
+        <%= company.description %>
+        <% if company.hiring %>
+          <span class="hiring"><%= company.name %> is hiring!</span>
+        <% end %>
+      </p>
+    <% end %>

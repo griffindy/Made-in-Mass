@@ -1,0 +1,44 @@
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to pat(:list), url(:companies, :index) %></li>
+      <li><%= link_to pat(:new), url(:companies, :new) %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= pat(:all) %> <% mt(:companies) %></h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first"><%= mat(:company, :id) %></th>
+          <th><%= mat(:company, :name) %></th>
+          <th><%= mat(:company, :website) %></th>
+          <th><%= mat(:company, :description) %></th>
+          <th><%= mat(:company, :created_at) %></th>
+          <th><%= mat(:company, :updated_at) %></th>
+          <th><%= mat(:company, :hiring) %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @companies.each do |company| %>
+        <tr>
+          <td class="first"><%= company.id %></td>
+          <td><%= company.name %></td>
+          <td><%= company.website %></td>
+          <td><%= company.description %></td>
+          <td><%= company.created_at %></td>
+          <td><%= company.updated_at %></td>
+          <td><%= company.hiring %></td>
+          <td class="last">
+            <%= button_to pat(:edit), url(:companies, :edit, :id => company.id), :method => :get, :class => :button_to %> |
+            <%= button_to pat(:delete), url(:companies, :destroy, :id => company.id), :method => :delete, :class => :button_to, :onsubmit => "return confirm('#{pat(:confirm)}')" %>
+          </td>
+        </tr>
+        <% end %>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<% content_for :sidebar, partial("base/sidebar") %>

@@ -1,0 +1,33 @@
+body {
+  width: 67%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: color .15s linear;
+  -webkit-transition: color .15s linear;
+  -moz-transitiok: color .15s linear;
+}
+
+a:hover {
+  /* text-decoration: underline; */
+  color: #666;
+  transition: color .15s linear;
+  -webkit-transition: color .15s linear;
+  -moz-transitiok: color .15s linear;
+}
+
+h4 {
+  display: inline;
+}
+
+h4:after {
+  content: ' - ';
+}
+
+.hiring {
+  color: #456;
+}
