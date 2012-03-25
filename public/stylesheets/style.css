@@ -31,3 +31,12 @@ h4:after {
 .hiring {
   color: #456;
 }
+
+footer {
+  
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 20px;
+}
