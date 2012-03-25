@@ -1,0 +1,7 @@
+>> Writing PID to tmp/pids/thin.pid
+>> Using rack adapter
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/psych-1.2.2/lib/psych.rb:93: warning: already initialized constant VERSION
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/psych-1.2.2/lib/psych.rb:96: warning: already initialized constant LIBYAML_VERSION
+>> Thin web server (v1.3.1 codename Triple Espresso)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:3000, CTRL+C to stop
