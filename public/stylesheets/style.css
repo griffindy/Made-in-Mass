@@ -1,6 +1,7 @@
 body {
   width: 67%;
   margin: 0 auto;
+  font-style: 16px;
   line-height: 1.5;
 }
 
@@ -20,6 +21,11 @@ a:hover {
   -moz-transitiok: color .15s linear;
 }
 
+h2 {
+  margin-top: -30px;
+  font-size: 1.17em;
+}
+
 h4 {
   display: inline;
 }
@@ -32,11 +38,22 @@ h4:after {
   color: #456;
 }
 
+dt {
+  font-style: italic;
+  margin-top: 10px;
+}
+
 footer {
-  
+  background-color: #eee;
+}
+
+footer ul {
+  text-align: center;
+  padding: 0;
+  width: auto;
 }
 
 footer ul li {
   display: inline;
-  margin: 0 20px;
+  margin: 0 7%;
 }

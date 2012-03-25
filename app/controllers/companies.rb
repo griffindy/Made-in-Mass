@@ -11,4 +11,12 @@ MadeInMass.controllers :companies do
     render 'companies/show'
   end
 
+  get :about, :map => '/about' do
+    render 'companies/about'
+  end
+
+  get :faqs, :map => '/faqs' do
+    render 'companies/faqs'
+  end
+
 end
