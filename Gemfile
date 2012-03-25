@@ -15,6 +15,7 @@ gem 'activerecord', :require => "active_record"
 gem 'pg'
 
 # Test requirements
+gem 'thin'
 
 # Padrino Stable Gem
 gem 'padrino', '0.10.6'
