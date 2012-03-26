@@ -14,12 +14,12 @@ a {
 }
 
 p a, dl a {
-  border-bottom: 1px dashed black;
+  color: #579;
 }
 
 a:hover {
   /* text-decoration: underline; */
-  color: #666;
+  color: #357;
   transition: color .15s linear;
   -webkit-transition: color .15s linear;
   -moz-transitiok: color .15s linear;
