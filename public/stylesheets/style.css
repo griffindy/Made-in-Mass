@@ -38,10 +38,6 @@ h4:after {
   content: ' - ';
 }
 
-.hiring {
-  color: #456;
-}
-
 dt {
   font-style: italic;
   margin-top: 10px;
