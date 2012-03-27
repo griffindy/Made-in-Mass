@@ -7,3 +7,4 @@ vendor/gems/*
 .sass-cache/*
 config/database.rb
 tags
+config/database.rb
