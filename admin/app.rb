@@ -30,9 +30,11 @@ class Admin < Padrino::Application
   access_control.roles_for :any do |role|
     role.protect "/"
     role.allow "/sessions"
+    role.allow '/submissions'
   end
 
   access_control.roles_for :admin do |role|
+    role.project_module :submissions, '/submissions'
     role.project_module :companies, '/companies'
     role.project_module :accounts, '/accounts'
   end

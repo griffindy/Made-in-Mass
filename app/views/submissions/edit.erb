@@ -1,0 +1,18 @@
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to pat(:list), url(:submissions, :index) %></li>
+      <li><%= link_to pat(:new), url(:submissions, :new) %></li>
+      <li class="active"><%= link_to pat(:edit), url(:submissions, :edit, :id => @submission.id) %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= pat(:edit) %> <% mt(:submission) %></h2>
+    <div class="inner">
+      <% form_for :submission, url(:submissions, :update, :id => @submission.id), :method => :put, :class => :form do |f| %>
+        <%= partial "submissions/form", :locals => { :f => f } %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<% content_for :sidebar, partial("base/sidebar") %>

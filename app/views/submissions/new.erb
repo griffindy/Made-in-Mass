@@ -1,0 +1,8 @@
+  <div class="content">
+    <div class="inner">
+      <% form_for :submission, url(:submissions, :create), :class => :form do |f| %>
+        <%= partial "submissions/form", :locals => { :f => f } %>
+      <% end %>
+    </div>
+  </div>
+</div>
