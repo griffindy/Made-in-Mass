@@ -1,5 +1,6 @@
   <div class="content">
     <div class="inner">
+      <h5>Fill out this form in order to be listed on Made in Mass.</h5>
       <% form_for :submission, url(:submissions, :create), :class => :form do |f| %>
         <%= partial "submissions/form", :locals => { :f => f } %>
       <% end %>

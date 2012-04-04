@@ -1,7 +1,16 @@
-<%= f.label :company %><%= f.error_message_on :company %>
-<%= f.text_field :company, :class => :text_field %>
-<%= f.label :description %><%= f.error_message_on :description %>
-<%= f.text_area :description, :class => :text_area %>
-<%= f.label :hiring %><%= f.error_message_on :hiring %>
-<%= f.check_box :hiring, :class => :check_box %>
+<div>
+  <%= f.label :company %><%= f.error_message_on :company %>
+  <%= f.text_field :company, :class => :text_field %>
+</div>
+<div>
+  <%= f.label :description %><%= f.error_message_on :description %>
+  <%= f.text_area :description, :class => :text_area %>
+</div>
+  <%= f.label :website %><%= f.error_message_on :website %>
+  <%= f.text_field :website %><%= f.error_message_on :website %>
+<div>
+  <%= f.label :hiring %><%= f.error_message_on :hiring %>
+  <%= f.check_box :hiring, :class => :check_box %>
+  <span>(is your company hiring?)</span>
+</div>
 <%= submit_tag %>
