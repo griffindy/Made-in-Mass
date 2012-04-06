@@ -30,10 +30,10 @@ MadeInMass.controllers :submissions do
       redirect url(:submissions, :edit, :id => @submission.id)
     else
       render 'submissions/edit'
-    end
+      end
   end
 
-  delete :destroy, :with => :id do
+  get :destroy, :with => :id do
     submission = Submission.find(params[:id])
     if submission.destroy
       flash[:notice] = 'Submission was successfully destroyed.'
