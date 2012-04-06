@@ -18,7 +18,7 @@
           <td><%= submission.hiring %></td>
           <td><%= submission.created_at %></td>
           <td><%= submission.updated_at %></td>
-          <td><%= link_to 'delete', "/destroy/#{submission.id}" %></td>
+          <td><%= link_to 'delete', "destroy/#{submission.id}" %></td>
         </tr>
         <% end %>
       </table>
